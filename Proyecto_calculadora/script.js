@@ -25,10 +25,16 @@ botones.forEach(boton => {
             try{
                 pantalla.textContent = eval(pantalla.textContent);
             }catch{
-                pantalla.textContent = "!error!"
+                pantalla.textContent = "ERROR"
             }
             return;
         }
+
+        if(pantalla.textContent === "//" || pantalla.textContent === "**"){
+            pantalla.textContent = "ERROR"
+        }
+
+
         if(pantalla.textContent === "0" || pantalla.textContent === "ERROR"){
             pantalla.textContent = botonOn;
         }else{
