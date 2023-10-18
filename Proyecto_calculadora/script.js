@@ -13,15 +13,12 @@ botones.forEach(boton => {
 
 
         if(boton.id === "borrar"){
-            if(pantalla.textContent.length === 1 || pantalla.textContent === "ERROR"){
+            if(pantalla.textContent.length === 1){
                 pantalla.textContent ="0";
             }else{
             pantalla.textContent = pantalla.textContent.slice(0, -1)
             }
             return;
-        }
-        if(/[+\-*/]/.test(pantalla.textContent.slice(-1)) && /[+\-*/]/.test(botonOn)){
-            throw new Error("ERROR");
         }
 
         if(boton.id === "igual"){
