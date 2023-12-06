@@ -1,2 +1,2 @@
 # ejercicios
-activities and exercices in movile
+activities and exercices 
